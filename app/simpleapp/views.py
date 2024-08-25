@@ -1,4 +1,4 @@
-from rest_framework import views, parsers, response, status
+from rest_framework import views, response, status
 from . import serializers
 
 class SimpleAppView(views.APIView):
