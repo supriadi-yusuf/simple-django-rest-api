@@ -3,5 +3,5 @@ from rest_framework import serializers
 class CalculateSerializer(serializers.Serializer):
     """input calculator"""
 
-    x = serializers.IntegerField()
-    y = serializers.IntegerField()
+    x = serializers.IntegerField(required=True)
+    y = serializers.IntegerField(required=True)
