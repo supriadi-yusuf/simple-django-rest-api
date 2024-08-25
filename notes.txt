@@ -1,0 +1,14 @@
+python -m venv .venv
+. .venv/bin/activate
+
+mkdir app
+cd app
+
+pip install django
+pip install djangorestframework
+
+django-admin startproject mysimpleproject .
+python manage.py startapp simpleapp
+
+before create unit tests folder for an app, make sure to delete file tests.py on the app
+
